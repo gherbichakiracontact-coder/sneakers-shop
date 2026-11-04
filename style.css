@@ -2,17 +2,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
- 
-body {
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
   color: #333;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(211, 209, 209);
 }
  
 a {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
  
 ul {
@@ -25,12 +24,72 @@ img {
   max-width: 100%;
 }
  
-header {
-  background-color: #fff;
-  padding: 15px 40px;
+header{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/assets/bg-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+header h1{
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+header h2{
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 1%;
+}
+.button-container {
+  display: flex;
+  gap: 16px;
+}
+.button{
+  /* padding: 8px 16px 8px 16px; */
+  padding: 8px 16px;
+  width: fit-content;
+  height: auto;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary{
+  background-color: #8005F2;
+  color: white;
+}
+
+.primary:hover{
+  background-color: #B569FC;
+}
+
+.secondary{
+  color: #8005F2;
+  border: 2px solid #8005F2;
+}
+
+.secondary:hover{
+  color: #B569FC;
+  border: 2px solid #B569FC;
 }
  
 nav {
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 3px 3px 3Px rgba(98, 97, 97, 0.423);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +105,7 @@ nav {
   width: 45px;
 }
  
-.logo h2 {
+.logo h3 {
   font-weight: 800;
   font-size: 1.5rem;
 }
@@ -90,6 +149,7 @@ h1 {
   font-weight: 800;
   font-size: 2.5rem;
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
  
 section {
@@ -119,6 +179,7 @@ article > div {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
  
 .titre h3 {
@@ -126,9 +187,9 @@ article > div {
   font-size: 1.2rem;
 }
  
-.titre span {
+.titre h4 {
   color: #8e44ad;
-  font-weight: 500;
+  font-weight: 800;
 }
  
 article p {
@@ -154,7 +215,6 @@ button:hover {
 }
  
 footer {
-  background-color: #fff;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
